@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingredient gallery</title>
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1>Ingredient gallery</h1>
+      <p>Pick an ingredient to see its nutrition, benefits, storage tips and recipes.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="gallery" id="gallery"></div>
+  </main>
+
+  <!-- Popup (one shared modal, filled by script.js) -->
+  <div class="overlay" id="overlay" hidden>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" tabindex="-1">
+      <button class="close" id="close" aria-label="Close">&times;</button>
+
+      <section class="m-head">
+        <div class="m-pic" id="mPic"></div>
+        <div>
+          <h2 id="mTitle"></h2>
+          <p id="mDesc"></p>
+          <div class="tags" id="mTags"></div>
+        </div>
+      </section>
+
+      <div class="m-cols">
+        <div class="col">
+          <section class="box green">
+            <h3>🌿 Nutritional Information</h3>
+            <p class="sub">(Approximate values per 100 g)</p>
+            <div class="stats" id="mStats"></div>
+          </section>
+          <section class="box blue">
+            <h3>🧊 Storage Tips</h3>
+            <ul id="mStorage"></ul>
+          </section>
+        </div>
+        <div class="col">
+          <section class="box mint">
+            <h3>✅ Advantages</h3>
+            <ul class="ticks" id="mPros"></ul>
+          </section>
+          <section class="box rose">
+            <h3>⚠️ Things to consider</h3>
+            <ul id="mCons"></ul>
+          </section>
+        </div>
+      </div>
+
+      <section class="box cream">
+        <div class="r-head">
+          <div>
+            <h3>🍴 Recipes Using This Ingredient</h3>
+            <p class="sub" id="mRecipeSub"></p>
+          </div>
+          <a class="outline" href="#">View All Recipes &rarr;</a>
+        </div>
+        <div class="recipes" id="mRecipes"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="../js/gallery.js"></script>
+</body>
+</html>
