@@ -10,10 +10,22 @@ body {
   line-height: 1.5;
 }
 
-a {
+
+/* ---------- secondnext/home>recipes ---------- */
+.secondnext {
+  padding: 16px 20px;
+  font-size: 12px;
+}
+
+.secondnext a {
   color: #333333;
 }
-/* header */
+
+.secondnext strong {
+  color: #a0102a;
+}
+/* navbar */
+
 .site-header nav {
   display: flex;
   gap: 20px;
@@ -32,8 +44,9 @@ a {
 }
 
 .site-header {
-  background: #c8102e;
+  background: #9b0c23;
   color: #fff;
+  font-family: Arial, sans-serif;
 }
 
 .wrap-bar {
@@ -44,15 +57,44 @@ a {
   gap: 8px;
   padding-top: 14px;
   padding-bottom: 14px;
+  max-width: 96%; 
+  margin: 0 auto; 
 }
 .wrap-bar .logo {
-  font-size: x-large;
+  font-size: 2.5rem;
 }
 .wrap-bar a {
   color: white;
 }
+a {
+  color: #333333;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color:#9b0c23;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: -20px;
+}
+
+
+nav {
+  display: flex;
+  gap: 30px; 
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 
 /* container */
+
 .recipe-container {
   display: flex;
   align-items: center;
@@ -75,7 +117,7 @@ a {
 }
 
 .recipe-tag {
-  color: #d32f2f;
+  color:#9b0c23;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -124,35 +166,6 @@ a {
     gap: 24px;
     margin: 20px;
   }
-}
-
-/* ---------- Breadcrumb/home>recipes ---------- */
-.breadcrumb {
-  padding: 16px 20px;
-  font-size: 12px;
-}
-
-.breadcrumb a {
-  color: #333333;
-}
-
-.breadcrumb strong {
-  color: #a0102a;
-}
-
-/* ---------- Meta ---------- */
-.meta {
-  padding: 28px 20px;
-  text-align: center;
-  font-size: 13px;
-}
-
-.meta-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px 30px;
-  margin-bottom: 14px;
 }
 
 /* ---------- cooking steps/tips ---------- */
@@ -319,6 +332,7 @@ a {
 }
 
 /* Footer */
+
 .footer {
   background: #1f2933;
   color: #e4e9ee;
