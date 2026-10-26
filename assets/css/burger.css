@@ -24,6 +24,7 @@ body {
 .secondnext strong {
   color: #a0102a;
 }
+
 /* navbar */
 
 .site-header nav {
@@ -104,11 +105,11 @@ nav a {
   margin: 40px auto;
   padding: 24px;
   background-color: #ffffff;
-  /* background-color: rgb(231, 240, 247); */
+  /* background-color: rgb(209, 213, 217); */
   border: #641d1d;
   border-radius: 12px;
   box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3);
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); Adds a very soft drop shadow */
+
 }
 
 .recipe-content,
@@ -130,7 +131,7 @@ nav a {
   font-weight: 800;
   color: black;
   margin: 0 0 16px 0;
-  /* text-shadow: 1px 1px 2px black, 0 0 25px rgb(234, 24, 42), 0 0 5px darkblue; */
+ 
 }
 
 .recipe-text {
@@ -248,9 +249,6 @@ nav a {
   cursor: pointer;
 }
 
-.ingredients input:checked + * {
-  text-decoration: line-through;
-}
 
 /* ---------- Nutrition ---------- */
 .nutrition {
@@ -386,7 +384,7 @@ nav a {
 }
 footer,
 .footer {
-  padding-left: 1% !important;
-  padding-right: 1% !important;
-  box-sizing: border-box !important;
+  padding-left: 1% ;
+  padding-right: 1% ;
+  box-sizing: border-box;
 }

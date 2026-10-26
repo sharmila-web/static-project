@@ -1,5 +1,5 @@
-const INGREDIENTS = [ //keyword use panniti variable declare panni eruka
-  {//block scope
+const INGREDIENTS = [
+  {
     id: "tomato", name: "Tomato", cat: "Fruit / Vegetable", bg: "#fde3dc",
     desc: "A juicy, vibrant fruit (yes, it's a fruit!) packed with flavour and nutrients. Tomatoes are a staple in many cuisines and add colour, taste and nutrition to your meals.",
     tags: ["Vitamin C", "Antioxidants", "Low Calorie", "High in Fibre"],
@@ -99,22 +99,20 @@ const INGREDIENTS = [ //keyword use panniti variable declare panni eruka
     storage: ["Keep in an airtight container.", "Store in a cool, dry cupboard.", "Overnight oats keep in the fridge for up to 3 days."],
     recipes: [["Porridge with Berries", "10 mins"], ["Overnight Oats", "5 mins"], ["Oat Flapjacks", "35 mins"], ["Banana Oat Pancakes", "20 mins"]]
   }
+  
 ];
 
 
 
 // ---------- Helpers ----------
-const $ = id => document.getElementById(id); //($) is helper function that select html element using  ID's/dom method(document.getElementById). s--parameter single parametr irundha curly braces optional dha.s-variable parameter-act temporaryplaceholder==> arrow function.
-const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");//slug is a custom function.remove dangerous characters,1234567890 into (123) 456-7890] indha line recipe name ya- image filename ku suitable -ah convert pannum .g--al matches um target,/.../ wrapped inside.[ and ] (Character Set),^ (The NOT Operator),+ it finds multiple invalid characters right next to each other • instead of multiple hyphens.
-let lastFocus = null;//oop ya open pannuradhukun munnadi yedha  focus panni eruku.ippo value yedhum illa
+const $ = id => document.getElementById(id); 
+const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+let lastFocus = null;
 
 
-// ---------- Gallery ----------// map()(used to transform array data) array la irrukura ovvoru ingredient um eduthu adha html button ah convert pannum ex:first item--tomato button .  .i current ingredient object
-//``use panna html string kulla js value insert panalam
-//i.name current ingridient oda name [or]  an object referenced by variable
-//custom data id arrtibute,button yendha ingredient ya represent pannudhunu identify panna help aagum,later btn click pannum bothu ,id use use panni crt details edukum
+// ----------Home page Gallery ----------//
 $("gallery").innerHTML = INGREDIENTS.map(i => ` 
-  <button class="item" data-id="${i.id}" aria-haspopup="dialog">
+  <button class="item" data-id="${i.id}">
     <div class="pic" style="background:${i.bg}">
      <img src="../images/${i.id}.jpg" alt="${i.name}">
     </div>   
@@ -122,30 +120,29 @@ $("gallery").innerHTML = INGREDIENTS.map(i => `
     <span class="cat">${i.cat}</span>
   </button>`).join("");
 
-// ---------- Popup ----------//functionnaa specific task ka perform panna vekira  eludhura  code 
-//pop up open pannura code,indha function ingredient pop up open pannuradhuku use agudhu
+// ---------- Popup ----------//
 function openModal(id) {
-  const i = INGREDIENTS.find(x => x.id === id);//find in array,x--x na array la erukura ovvoru ingredient,x.id--andha ingredient oda id,id function ku pass panna id,===--rendu values um type um value um same ah irukka nu check pannum ,i selected ingredient,ns elected ingredient oda  nutrition details
+  const i = INGREDIENTS.find(x => x.id === id);
   const n = i.nutrition;
-  const stats = [//nutriets statistics create pannuradhu.oru array kulla multiple small arrays create pannudhu
+  const stats = [ 
     // [0]  [1]   [2]
     ["🔥", n.cal, "Calories"],
     ["💪", n.protein + " g", "Protein"],
-    ["🌾", n.carbs + " g", "Carbohydrates"],//g na number oda unit ya join pannudhu ex 0.9+"g"
+    ["🌾", n.carbs + " g", "Carbohydrates"],
     ["💧", n.fat + " g", "Fat"],
     ["🌿", n.fibre + " g", "Fibre"],
     ["⭐", n.key[1], n.key[0]]
     //      14g       vitamin c
   ];
 //pop up la display pannuradhu
-  $("mPic").style.background = i.bg;//mpic element oda bg color yaa selected ingredient color ku maathum
-  $("mPic").innerHTML = `<img src="../images/${i.id}.jpg" alt="${i.name}">`;//img show
+  $("mPic").style.background = i.bg;
+  $("mPic").innerHTML = `<img src="../images/${i.id}.jpg" alt="${i.name}">`;
   $("mTitle").textContent = i.name;
   $("mDesc").textContent = i.desc;
-  $("mTags").innerHTML = i.tags.map((t, k) => `<span class="tag t${k % 4}">${t}</span>`).join("");//t--current tag text.k--index number.k%4--0123 nu repeat aagum
- //nutrition cards . s--current statics array , index[s0][s1]
-  $("mStats").innerHTML = stats.map((s, k) =>
-    `<div class="stat s${k}"><div class="ico" aria-hidden="true">${s[0]}</div><b>${s[1]}</b><small>${s[2]}</small></div>`).join("");
+  $("mTags").innerHTML = i.tags.map((t, k) => `<span class="tag t${k % 4}">${t}</span>`).join("");
+    $("mStats").innerHTML = stats.map((s, k) =>
+    `<div class="stat s${k}"><div class="ico">${s[0]}</div><b>${s[1]}</b><small>${s[2]}</small></div>`).join("");
+
  //advantage and disadvantages
   $("mPros").innerHTML = i.pros.map(p => `<li>${p}</li>`).join("");
   $("mCons").innerHTML = i.cons.map(p => `<li>${p}</li>`).join("");
@@ -159,26 +156,26 @@ function openModal(id) {
       <div class="rbody"><strong>${r[0]}</strong><span>🕒 ${r[1]}</span></div>
     </div>`).join("");
   //pop up visible pannuradhu
-  //lastFocus andha element yaa save pannum
-  lastFocus = document.activeElement;//ippo focus la erukura element ah kandupudikum
-  $("overlay").hidden = false;//overlay ya vaa visible panum
-  document.body.classList.add("lock");//body ku lock css class add pannurom
-  $("overlay").scrollTop = 0;//overscrolling position top ku kondu porom
-  $("modal").focus();//pop up dialog ku keyboard focus kondu pogum
+  
+  lastFocus = document.activeElement;
+  $("overlay").hidden = false;
+  document.body.classList.add("lock");
+  $("overlay").scrollTop = 0;
+  $("modal").focus();
 }
 //pop up close
 function closeModal() {
-  $("overlay").hidden = true;//hidden = true pop up maranjidum
-  document.body.classList.remove("lock");//body la erundhu lock class remove agum
-  if (lastFocus) lastFocus.focus();//last focus la value eruka nu check pannum .lastFocus.focus() pop up open pannuradhuku munnadi element thirumba focus pogum
+  $("overlay").hidden = true;
+  document.body.classList.remove("lock");
+  if (lastFocus) lastFocus.focus();
 }
 
 
-//event listerners //user actin handle pannuradhu
-$("gallery").addEventListener("click", e => {//gallery kulla click nadandha call back function run aagum
+//event listerners 
+$("gallery").addEventListener("click", e => {
   const b = e.target.closest(".item");
   if (b) openModal(b.dataset.id);
 });
-$("close").addEventListener("click", closeModal);//closemodal ku podala.function odanae execute pannama,click nadakumbothu execute aagura callback-ah pass panrom
-$("overlay").addEventListener("click", e => { if (e.target === $("overlay")) closeModal(); });//popum bg area la click panna close aagadhu,e.target === $("overlay") direct ya overlay mela dhaan nadakudha nu verify panna
+$("close").addEventListener("click", closeModal);
+$("overlay").addEventListener("click", e => { if (e.target === $("overlay")) closeModal(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("overlay").hidden) closeModal(); });

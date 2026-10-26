@@ -92,7 +92,7 @@ nav {
 
 nav a {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration:none;
   font-size: 16px;
   font-weight: 500;
 }
@@ -118,7 +118,7 @@ nav a {
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 24px; */
+  gap: 24px; 
 }
 
 .recipe-card {
