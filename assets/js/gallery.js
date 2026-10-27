@@ -149,13 +149,14 @@ function openModal(id) {
   $("mStorage").innerHTML = i.storage.map(p => `<li>${p}</li>`).join("");
   //recipe list
   $("mRecipeSub").textContent = `Here are some delicious recipes that include ${i.name.toLowerCase()}:`;
-  //r[0]-->tomato rice. r[1]--->30mins . slug(r[0])--->tomato-rice. image path
+  
   $("mRecipes").innerHTML = i.recipes.map(r => `
     <div class="rcard">
       <div class="rpic" style="background:${i.bg}"><img src="../images/${slug(r[0])}.jpg" alt="${r[0]}"></div>
       <div class="rbody"><strong>${r[0]}</strong><span>🕒 ${r[1]}</span></div>
     </div>`).join("");
-  //pop up visible pannuradhu
+
+  //pop up visible 
   
   lastFocus = document.activeElement;
   $("overlay").hidden = false;
