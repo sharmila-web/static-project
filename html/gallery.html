@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingredient Gallery</title>
+  <link rel="stylesheet" href="../css/gallery.css">
+  <script src="../js/gallery.js" defer></script>
+</head>
+<body>
+  
+    <!--navbar-->
+  <header class="site-header">
+    <div class="wrap-bar">
+      <a class="logo">Recipe<span> Finder</span></a>
+      <nav>
+        <a href="../../index.html" >Home</a>
+        <a href="../../index.html#all-recipe">Recipes</a>
+        <a href="#Gallery">Gallery</a>
+      </nav>
+    </div>
+  </header>
+  <br>
+  <header class="page-header">
+    <h1>Ingredient gallery</h1>
+    <p>Pick an ingredient to see its nutrition, benefits, storage tips and recipes.</p>
+  </header>
+
+  <!-- Gallery: each card holds a hidden <template> with its own popup details -->
+  <main class="gallery">
+
+    <!-- 1. TOMATO -->
+    <article class="card" tabindex="0">
+      <img src="../assets/images/tomato.jpg" alt="Tomato" loading="lazy">
+      <h2>Tomato</h2>
+      <p>Fruit / Vegetable</p>
+      <template>
+        <div class="popup-top">
+          <img src="../assets/images/tomato.jpg" alt="Tomato">
+          <div>
+            <h2>Tomato</h2>
+            <p>A juicy, vibrant fruit (yes, it's a fruit!) packed with flavour and nutrients. Tomatoes are a staple in many cuisines and add colour, taste and nutrition to your meals.</p>
+            <ul class="tags"><li class="pink">Vitamin C</li><li class="green">Antioxidants</li><li class="blue">Low Calorie</li><li class="purple">High in Fibre</li></ul>
+          </div>
+        </div>
+        <div class="popup-grid">
+          <div class="col">
+            <section class="box nutrition"><h3>🌿 Nutritional Information</h3><p class="note">(Approximate values per 100 g)</p>
+              <div class="nutri">
+                <div class="n n1"><span>🔥</span><strong>18</strong>Calories</div>
+                <div class="n n2"><span>💪</span><strong>0.9 g</strong>Protein</div>
+                <div class="n n3"><span>🌾</span><strong>3.9 g</strong>Carbohydrates</div>
+                <div class="n n4"><span>💧</span><strong>0.2 g</strong>Fat</div>
+                <div class="n n5"><span>🌿</span><strong>1.2 g</strong>Fibre</div>
+                <div class="n n6"><span>⭐</span><strong>14 mg</strong>Vitamin C</div>
+              </div>
+            </section>
+            <section class="box storage"><h3>🧊 Storage Tips</h3>
+              <ul><li>Keep at room temperature (if unripe).</li><li>Store in the fridge to keep it fresh longer.</li><li>Use within a week for the best taste and quality.</li></ul>
+            </section>
+          </div>
+          <div class="col">
+            <section class="box good"><h3>✅ Advantages</h3>
+              <ul><li>Rich in vitamin C, A and potassium.</li><li>Contains powerful antioxidants like lycopene.</li><li>Supports heart health.</li><li>May help boost immunity.</li></ul>
+            </section>
+            <section class="box warn"><h3>⚠️ Things to consider</h3>
+              <ul><li>May trigger acid reflux in some people.</li><li>Can cause allergies in rare cases.</li><li>Excessive intake may lead to stomach discomfort.</li></ul>
+            </section>
+          </div>
+        </div>
+        <section class="box recipes"><h3>🍴 Recipes Using This Ingredient</h3><p class="note">Here are some delicious recipes that include tomato:</p>
+          <div class="recipe-grid">
+            <figure class="recipe"><img src="../assets/images/tomato-rice.jpg" alt="Tomato Rice" loading="lazy"><figcaption><b>Tomato Rice</b><span>🕒 30 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/tomato-soup.jpg" alt="Tomato Soup" loading="lazy"><figcaption><b>Tomato Soup</b><span>🕒 25 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/pasta-with-tomato-sauce.jpg" alt="Pasta with Tomato Sauce" loading="lazy"><figcaption><b>Pasta with Tomato Sauce</b><span>🕒 20 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/tomato-salad.jpg" alt="Tomato Salad" loading="lazy"><figcaption><b>Tomato Salad</b><span>🕒 15 mins</span></figcaption></figure>
+          </div>
+        </section>
+      </template>
+    </article>
+
+    <!-- 2. EGG -->
+    <article class="card" tabindex="0">
+      <img src="../assets/images/egg.jpg" alt="Eggs" loading="lazy">
+      <h2>Egg</h2>
+      <p>Protein</p>
+      <template>
+        <div class="popup-top">
+          <img src="../assets/images/egg.jpg" alt="Eggs">
+          <div>
+            <h2>Egg</h2>
+            <p>A versatile, affordable protein source. Eggs can be boiled, fried, scrambled or baked, and they fit into breakfast, lunch and dinner.</p>
+            <ul class="tags"><li class="pink">High Protein</li><li class="green">Vitamin B12</li><li class="blue">Choline</li><li class="purple">Filling</li></ul>
+          </div>
+        </div>
+        <div class="popup-grid">
+          <div class="col">
+            <section class="box nutrition"><h3>🌿 Nutritional Information</h3><p class="note">(Approximate values per 100 g)</p>
+              <div class="nutri">
+                <div class="n n1"><span>🔥</span><strong>143</strong>Calories</div>
+                <div class="n n2"><span>💪</span><strong>12.6 g</strong>Protein</div>
+                <div class="n n3"><span>🌾</span><strong>0.7 g</strong>Carbohydrates</div>
+                <div class="n n4"><span>💧</span><strong>9.5 g</strong>Fat</div>
+                <div class="n n5"><span>🌿</span><strong>0 g</strong>Fibre</div>
+                <div class="n n6"><span>⭐</span><strong>0.9 mg</strong>Vitamin B12</div>
+              </div>
+            </section>
+            <section class="box storage"><h3>🧊 Storage Tips</h3>
+              <ul><li>Keep eggs in the fridge, ideally in their carton.</li><li>Store them with the pointed end down.</li><li>Use within 3–5 weeks; hard-boiled eggs within a week.</li></ul>
+            </section>
+          </div>
+          <div class="col">
+            <section class="box good"><h3>✅ Advantages</h3>
+              <ul><li>Complete protein with all essential amino acids.</li><li>Good source of vitamin D, B12 and choline.</li><li>Keeps you full for longer.</li><li>Supports muscle and eye health.</li></ul>
+            </section>
+            <section class="box warn"><h3>⚠️ Things to consider</h3>
+              <ul><li>Egg allergy is common, especially in children.</li><li>Always cook eggs fully to avoid food-borne illness.</li><li>The yolk is high in cholesterol; moderate if advised.</li></ul>
+            </section>
+          </div>
+        </div>
+        <section class="box recipes"><h3>🍴 Recipes Using This Ingredient</h3><p class="note">Here are some delicious recipes that include egg:</p>
+          <div class="recipe-grid">
+            <figure class="recipe"><img src="../assets/images/veggie-omelette.jpg" alt="Veggie Omelette" loading="lazy"><figcaption><b>Veggie Omelette</b><span>🕒 10 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/egg-fried-rice.jpg" alt="Egg Fried Rice" loading="lazy"><figcaption><b>Egg Fried Rice</b><span>🕒 20 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/avocado-egg-toast.jpg" alt="Avocado Egg Toast" loading="lazy"><figcaption><b>Avocado Egg Toast</b><span>🕒 10 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/Shakshuka.jpg" alt="Shakshuka" loading="lazy"><figcaption><b>Shakshuka</b><span>🕒 30 mins</span></figcaption></figure>
+          </div>
+        </section>
+      </template>
+    </article>
+
+    <!-- 3. SPINACH -->
+    <article class="card" tabindex="0">
+      <img src="../assets/images/spinach.jpg" alt="Spinach" loading="lazy">
+      <h2>Spinach</h2>
+      <p>Leafy green</p>
+      <template>
+        <div class="popup-top">
+          <img src="../assets/images/spinach.jpg" alt="Spinach">
+          <div>
+            <h2>Spinach</h2>
+            <p>A tender, dark green leaf with a mild flavour. Spinach is great raw in salads or cooked into curries, soups and smoothies.</p>
+            <ul class="tags"><li class="pink">Iron</li><li class="green">Vitamin K</li><li class="blue">Low Calorie</li><li class="purple">Folate</li></ul>
+          </div>
+        </div>
+        <div class="popup-grid">
+          <div class="col">
+            <section class="box nutrition"><h3>🌿 Nutritional Information</h3><p class="note">(Approximate values per 100 g)</p>
+              <div class="nutri">
+                <div class="n n1"><span>🔥</span><strong>23</strong>Calories</div>
+                <div class="n n2"><span>💪</span><strong>2.9 g</strong>Protein</div>
+                <div class="n n3"><span>🌾</span><strong>3.6 g</strong>Carbohydrates</div>
+                <div class="n n4"><span>💧</span><strong>0.4 g</strong>Fat</div>
+                <div class="n n5"><span>🌿</span><strong>2.2 g</strong>Fibre</div>
+                <div class="n n6"><span>⭐</span><strong>28 mg</strong>Vitamin C</div>
+              </div>
+            </section>
+            <section class="box storage"><h3>🧊 Storage Tips</h3>
+              <ul><li>Keep unwashed leaves in the fridge.</li><li>Wrap in a paper towel inside a container to absorb moisture.</li><li>Use within 3–5 days for the best freshness.</li></ul>
+            </section>
+          </div>
+          <div class="col">
+            <section class="box good"><h3>✅ Advantages</h3>
+              <ul><li>Rich in iron, folate and vitamins A, C and K.</li><li>Contains antioxidants that support eye health.</li><li>Helps keep bones strong.</li><li>Very low in calories.</li></ul>
+            </section>
+            <section class="box warn"><h3>⚠️ Things to consider</h3>
+              <ul><li>High in oxalates; may affect people prone to kidney stones.</li><li>High vitamin K can interact with blood thinners.</li><li>Wash well to remove soil and grit.</li></ul>
+            </section>
+          </div>
+        </div>
+        <section class="box recipes"><h3>🍴 Recipes Using This Ingredient</h3><p class="note">Here are some delicious recipes that include spinach:</p>
+          <div class="recipe-grid">
+            <figure class="recipe"><img src="../assets/images/saag-paneer.jpg" alt="Saag Paneer" loading="lazy"><figcaption><b>Saag Paneer</b><span>🕒 35 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/spinach-omelette.jpg" alt="Spinach Omelette" loading="lazy"><figcaption><b>Spinach Omelette</b><span>🕒 10 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/green-smoothie.jpg" alt="Green Smoothie" loading="lazy"><figcaption><b>Green Smoothie</b><span>🕒 5 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/spinach-pasta.jpg" alt="Spinach Pasta" loading="lazy"><figcaption><b>Spinach Pasta</b><span>🕒 25 mins</span></figcaption></figure>
+          </div>
+        </section>
+      </template>
+    </article>
+
+    <!-- 4. CARROT -->
+    <article class="card" tabindex="0">
+      <img src="../assets/images/carrot.jpg" alt="Carrots" loading="lazy">
+      <h2>Carrot</h2>
+      <p>Root vegetable</p>
+      <template>
+        <div class="popup-top">
+          <img src="../assets/images/carrot.jpg" alt="Carrots">
+          <div>
+            <h2>Carrot</h2>
+            <p>A crunchy, naturally sweet root vegetable. Enjoy carrots raw as a snack, grated into salads, or cooked in soups, curries and desserts.</p>
+            <ul class="tags"><li class="pink">Vitamin A</li><li class="green">Beta-carotene</li><li class="blue">Low Fat</li><li class="purple">Crunchy</li></ul>
+          </div>
+        </div>
+        <div class="popup-grid">
+          <div class="col">
+            <section class="box nutrition"><h3>🌿 Nutritional Information</h3><p class="note">(Approximate values per 100 g)</p>
+              <div class="nutri">
+                <div class="n n1"><span>🔥</span><strong>41</strong>Calories</div>
+                <div class="n n2"><span>💪</span><strong>0.9 g</strong>Protein</div>
+                <div class="n n3"><span>🌾</span><strong>9.6 g</strong>Carbohydrates</div>
+                <div class="n n4"><span>💧</span><strong>0.2 g</strong>Fat</div>
+                <div class="n n5"><span>🌿</span><strong>2.8 g</strong>Fibre</div>
+                <div class="n n6"><span>⭐</span><strong>835 mg</strong>Vitamin A</div>
+              </div>
+            </section>
+            <section class="box storage"><h3>🧊 Storage Tips</h3>
+              <ul><li>Cut off the green tops before storing.</li><li>Keep in the fridge crisper drawer.</li><li>Stays fresh for 3–4 weeks when stored well.</li></ul>
+            </section>
+          </div>
+          <div class="col">
+            <section class="box good"><h3>✅ Advantages</h3>
+              <ul><li>Excellent source of beta-carotene (vitamin A).</li><li>Supports healthy eyesight and skin.</li><li>Good fibre content aids digestion.</li><li>Low in calories and fat.</li></ul>
+            </section>
+            <section class="box warn"><h3>⚠️ Things to consider</h3>
+              <ul><li>Very large amounts may tint skin slightly orange.</li><li>Raw carrots can be hard for young children to chew.</li><li>Some people with pollen allergies react to raw carrot.</li></ul>
+            </section>
+          </div>
+        </div>
+        <section class="box recipes"><h3>🍴 Recipes Using This Ingredient</h3><p class="note">Here are some delicious recipes that include carrot:</p>
+          <div class="recipe-grid">
+            <figure class="recipe"><img src="../assets/images/carrot-soup.jpg" alt="Carrot Soup" loading="lazy"><figcaption><b>Carrot Soup</b><span>🕒 25 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/carrot-cake.jpg" alt="Carrot Cake" loading="lazy"><figcaption><b>Carrot Cake</b><span>🕒 60 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/roasted-carrots.jpg" alt="Roasted Carrots" loading="lazy"><figcaption><b>Roasted Carrots</b><span>🕒 30 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/carrot-halwa.jpg" alt="Carrot Halwa" loading="lazy"><figcaption><b>Carrot Halwa</b><span>🕒 40 mins</span></figcaption></figure>
+          </div>
+        </section>
+      </template>
+    </article>
+
+    <!-- 5. POTATO -->
+    <article class="card" tabindex="0">
+      <img src="../assets/images/potato.jpg" alt="Potatoes" loading="lazy">
+      <h2>Potato</h2>
+      <p>Starchy vegetable</p>
+      <template>
+        <div class="popup-top">
+          <img src="../assets/images/potato.jpg" alt="Potatoes">
+          <div>
+            <h2>Potato</h2>
+            <p>A comforting, filling staple that goes with almost anything. Potatoes can be boiled, baked, roasted, mashed or fried.</p>
+            <ul class="tags"><li class="pink">Vitamin C</li><li class="green">Potassium</li><li class="blue">Energy Rich</li><li class="purple">Filling</li></ul>
+          </div>
+        </div>
+        <div class="popup-grid">
+          <div class="col">
+            <section class="box nutrition"><h3>🌿 Nutritional Information</h3><p class="note">(Approximate values per 100 g)</p>
+              <div class="nutri">
+                <div class="n n1"><span>🔥</span><strong>77</strong>Calories</div>
+                <div class="n n2"><span>💪</span><strong>2 g</strong>Protein</div>
+                <div class="n n3"><span>🌾</span><strong>17 g</strong>Carbohydrates</div>
+                <div class="n n4"><span>💧</span><strong>0.1 g</strong>Fat</div>
+                <div class="n n5"><span>🌿</span><strong>2.2 g</strong>Fibre</div>
+                <div class="n n6"><span>⭐</span><strong>20 mg</strong>Vitamin C</div>
+              </div>
+            </section>
+            <section class="box storage"><h3>🧊 Storage Tips</h3>
+              <ul><li>Store in a cool, dark, dry place.</li><li>Do not refrigerate; it can turn the starch sweet.</li><li>Keep away from onions and discard sprouted or green ones.</li></ul>
+            </section>
+          </div>
+          <div class="col">
+            <section class="box good"><h3>✅ Advantages</h3>
+              <ul><li>Good source of potassium and vitamin B6.</li><li>Gives quick, lasting energy.</li><li>Naturally fat-free and gluten-free.</li><li>Keeps you full for longer.</li></ul>
+            </section>
+            <section class="box warn"><h3>⚠️ Things to consider</h3>
+              <ul><li>High in carbohydrates; watch portions if managing blood sugar.</li><li>Frying adds a lot of extra fat and calories.</li><li>Green or sprouted potatoes contain solanine, so avoid them.</li></ul>
+            </section>
+          </div>
+        </div>
+        <section class="box recipes"><h3>🍴 Recipes Using This Ingredient</h3><p class="note">Here are some delicious recipes that include potato:</p>
+          <div class="recipe-grid">
+            <figure class="recipe"><img src="../assets/images/patatas-bravas.jpg" alt="Patatas Bravas" loading="lazy"><figcaption><b>Patatas Bravas</b><span>🕒 35 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/baked-jacket-potato.jpg" alt="Baked Jacket Potato" loading="lazy"><figcaption><b>Baked Jacket Potato</b><span>🕒 60 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/aloo-gobi.jpg" alt="Aloo Gobi" loading="lazy"><figcaption><b>Aloo Gobi</b><span>🕒 30 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/potato-salad.jpg" alt="Potato Salad" loading="lazy"><figcaption><b>Potato Salad</b><span>🕒 25 mins</span></figcaption></figure>
+          </div>
+        </section>
+      </template>
+    </article>
+
+    <!-- 6. GARLIC -->
+    <article class="card" tabindex="0">
+      <img src="../assets/images/garlic.jpg" alt="Garlic" loading="lazy">
+      <h2>Garlic</h2>
+      <p>Herb / Bulb</p>
+      <template>
+        <div class="popup-top">
+          <img src="../assets/images/garlic.jpg" alt="Garlic">
+          <div>
+            <h2>Garlic</h2>
+            <p>A pungent bulb that builds the base of countless dishes. A little garlic adds a big punch of flavour and aroma.</p>
+            <ul class="tags"><li class="pink">Allicin</li><li class="green">Antioxidants</li><li class="blue">Immunity</li><li class="purple">Flavour Booster</li></ul>
+          </div>
+        </div>
+        <div class="popup-grid">
+          <div class="col">
+            <section class="box nutrition"><h3>🌿 Nutritional Information</h3><p class="note">(Approximate values per 100 g)</p>
+              <div class="nutri">
+                <div class="n n1"><span>🔥</span><strong>149</strong>Calories</div>
+                <div class="n n2"><span>💪</span><strong>6.4 g</strong>Protein</div>
+                <div class="n n3"><span>🌾</span><strong>33 g</strong>Carbohydrates</div>
+                <div class="n n4"><span>💧</span><strong>0.5 g</strong>Fat</div>
+                <div class="n n5"><span>🌿</span><strong>2.1 g</strong>Fibre</div>
+                <div class="n n6"><span>⭐</span><strong>31 mg</strong>Vitamin C</div>
+              </div>
+            </section>
+            <section class="box storage"><h3>🧊 Storage Tips</h3>
+              <ul><li>Keep whole bulbs in a cool, dry, airy place.</li><li>Avoid the fridge for whole bulbs.</li><li>Peeled cloves last about a week in the fridge.</li></ul>
+            </section>
+          </div>
+          <div class="col">
+            <section class="box good"><h3>✅ Advantages</h3>
+              <ul><li>Contains allicin, a compound with antibacterial properties.</li><li>May help support heart health.</li><li>May help support the immune system.</li><li>Adds flavour with very few calories.</li></ul>
+            </section>
+            <section class="box warn"><h3>⚠️ Things to consider</h3>
+              <ul><li>Can cause bad breath and body odour.</li><li>May cause heartburn or stomach upset in some people.</li><li>Can increase bleeding risk in large amounts; talk to a doctor if on blood thinners.</li></ul>
+            </section>
+          </div>
+        </div>
+        <section class="box recipes"><h3>🍴 Recipes Using This Ingredient</h3><p class="note">Here are some delicious recipes that include garlic:</p>
+          <div class="recipe-grid">
+            <figure class="recipe"><img src="../assets/images/garlic-butter-prawns.jpg" alt="Garlic Butter Prawns" loading="lazy"><figcaption><b>Garlic Butter Prawns</b><span>🕒 15 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/roasted-garlic-hummus.jpg" alt="Roasted Garlic Hummus" loading="lazy"><figcaption><b>Roasted Garlic Hummus</b><span>🕒 20 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/garlic-rice.jpg" alt="Garlic Rice" loading="lazy"><figcaption><b>Garlic Rice</b><span>🕒 20 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/garlic-bread.jpg" alt="Garlic Bread" loading="lazy"><figcaption><b>Garlic Bread</b><span>🕒 15 mins</span></figcaption></figure>
+          </div>
+        </section>
+      </template>
+    </article>
+
+    <!-- 7. LENTILS -->
+    <article class="card" tabindex="0">
+      <img src="../assets/images/lentils.jpg" alt="Lentils" loading="lazy">
+      <h2>Lentils</h2>
+      <p>Pulse</p>
+      <template>
+        <div class="popup-top">
+          <img src="../assets/images/lentils.jpg" alt="Lentils">
+          <div>
+            <h2>Lentils</h2>
+            <p>Small, quick-cooking pulses full of plant protein. Lentils turn into hearty dals, soups, stews and salads.</p>
+            <ul class="tags"><li class="pink">Plant Protein</li><li class="green">Iron</li><li class="blue">Low Fat</li><li class="purple">High in Fibre</li></ul>
+          </div>
+        </div>
+        <div class="popup-grid">
+          <div class="col">
+            <section class="box nutrition"><h3>🌿 Nutritional Information</h3><p class="note">(Approximate values per 100 g, cooked)</p>
+              <div class="nutri">
+                <div class="n n1"><span>🔥</span><strong>116</strong>Calories</div>
+                <div class="n n2"><span>💪</span><strong>9 g</strong>Protein</div>
+                <div class="n n3"><span>🌾</span><strong>20 g</strong>Carbohydrates</div>
+                <div class="n n4"><span>💧</span><strong>0.4 g</strong>Fat</div>
+                <div class="n n5"><span>🌿</span><strong>7.9 g</strong>Fibre</div>
+                <div class="n n6"><span>⭐</span><strong>3.3 mg</strong>Iron</div>
+              </div>
+            </section>
+            <section class="box storage"><h3>🧊 Storage Tips</h3>
+              <ul><li>Store dry lentils in an airtight container in a cool, dry place.</li><li>Dry lentils keep well for up to a year.</li><li>Cooked lentils last 3–5 days in the fridge.</li></ul>
+            </section>
+          </div>
+          <div class="col">
+            <section class="box good"><h3>✅ Advantages</h3>
+              <ul><li>Excellent plant-based protein and iron.</li><li>High fibre supports digestion and fullness.</li><li>Rich in folate for heart and cell health.</li><li>Affordable and quick to cook.</li></ul>
+            </section>
+            <section class="box warn"><h3>⚠️ Things to consider</h3>
+              <ul><li>Can cause gas or bloating if you are not used to fibre.</li><li>Contains purines; moderate if you have gout.</li><li>Rinse and cook thoroughly before eating.</li></ul>
+            </section>
+          </div>
+        </div>
+        <section class="box recipes"><h3>🍴 Recipes Using This Ingredient</h3><p class="note">Here are some delicious recipes that include lentils:</p>
+          <div class="recipe-grid">
+            <figure class="recipe"><img src="../assets/images/lentil-dal.jpg" alt="Lentil Dal" loading="lazy"><figcaption><b>Lentil Dal</b><span>🕒 30 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/carrot-and-lentil-soup.jpg" alt="Carrot and Lentil Soup" loading="lazy"><figcaption><b>Carrot and Lentil Soup</b><span>🕒 35 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/lentil-bolognese.jpg" alt="Lentil Bolognese" loading="lazy"><figcaption><b>Lentil Bolognese</b><span>🕒 40 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/lentil-salad.jpg" alt="Lentil Salad" loading="lazy"><figcaption><b>Lentil Salad</b><span>🕒 20 mins</span></figcaption></figure>
+          </div>
+        </section>
+      </template>
+    </article>
+
+    <!-- 8. AVOCADO -->
+    <article class="card" tabindex="0">
+      <img src="../assets/images/avocado.jpg" alt="Avocado" loading="lazy">
+      <h2>Avocado</h2>
+      <p>Fruit</p>
+      <template>
+        <div class="popup-top">
+          <img src="../assets/images/avocado.jpg" alt="Avocado">
+          <div>
+            <h2>Avocado</h2>
+            <p>A creamy fruit with a buttery texture and mild, nutty taste. Avocado is perfect on toast, in salads and smoothies, or mashed into dips.</p>
+            <ul class="tags"><li class="pink">Healthy Fats</li><li class="green">Potassium</li><li class="blue">Creamy</li><li class="purple">High in Fibre</li></ul>
+          </div>
+        </div>
+        <div class="popup-grid">
+          <div class="col">
+            <section class="box nutrition"><h3>🌿 Nutritional Information</h3><p class="note">(Approximate values per 100 g)</p>
+              <div class="nutri">
+                <div class="n n1"><span>🔥</span><strong>160</strong>Calories</div>
+                <div class="n n2"><span>💪</span><strong>2 g</strong>Protein</div>
+                <div class="n n3"><span>🌾</span><strong>8.5 g</strong>Carbohydrates</div>
+                <div class="n n4"><span>💧</span><strong>14.7 g</strong>Fat</div>
+                <div class="n n5"><span>🌿</span><strong>6.7 g</strong>Fibre</div>
+                <div class="n n6"><span>⭐</span><strong>485 mg</strong>Potassium</div>
+              </div>
+            </section>
+            <section class="box storage"><h3>🧊 Storage Tips</h3>
+              <ul><li>Ripen hard avocados at room temperature.</li><li>Once ripe, move to the fridge for 2–3 days.</li><li>Brush cut halves with lemon juice and cover to slow browning.</li></ul>
+            </section>
+          </div>
+          <div class="col">
+            <section class="box good"><h3>✅ Advantages</h3>
+              <ul><li>Rich in heart-healthy monounsaturated fats.</li><li>High in fibre and potassium.</li><li>Helps the body absorb fat-soluble vitamins.</li><li>Contains vitamins K, E and folate.</li></ul>
+            </section>
+            <section class="box warn"><h3>⚠️ Things to consider</h3>
+              <ul><li>Calorie-dense, so portion size matters.</li><li>Some people with latex allergy react to avocado.</li><li>High vitamin K can interact with blood thinners.</li></ul>
+            </section>
+          </div>
+        </div>
+        <section class="box recipes"><h3>🍴 Recipes Using This Ingredient</h3><p class="note">Here are some delicious recipes that include avocado:</p>
+          <div class="recipe-grid">
+            <figure class="recipe"><img src="../assets/images/guacamole.jpg" alt="Guacamole" loading="lazy"><figcaption><b>Guacamole</b><span>🕒 10 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/avocado-toast.jpg" alt="Avocado Toast" loading="lazy"><figcaption><b>Avocado Toast</b><span>🕒 10 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/avocado-salad.jpg" alt="Avocado Salad" loading="lazy"><figcaption><b>Avocado Salad</b><span>🕒 12 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/chocolate-avocado-mousse.jpg" alt="Chocolate Avocado Mousse" loading="lazy"><figcaption><b>Chocolate Avocado Mousse</b><span>🕒 15 mins</span></figcaption></figure>
+          </div>
+        </section>
+      </template>
+    </article>
+
+    <!-- 9. CHICKEN -->
+    <article class="card" tabindex="0">
+      <img src="../assets/images/chicken.jpg" alt="Raw chicken" loading="lazy">
+      <h2>Chicken</h2>
+      <p>Protein</p>
+      <template>
+        <div class="popup-top">
+          <img src="../assets/images/chicken.jpg" alt="Raw chicken">
+          <div>
+            <h2>Chicken</h2>
+            <p>A lean, popular meat with a mild flavour. Chicken can be grilled, roasted, curried or added to soups and salads.</p>
+            <ul class="tags"><li class="pink">High Protein</li><li class="green">Vitamin B6</li><li class="blue">Lean</li><li class="purple">Versatile</li></ul>
+          </div>
+        </div>
+        <div class="popup-grid">
+          <div class="col">
+            <section class="box nutrition"><h3>🌿 Nutritional Information</h3><p class="note">(Approximate values per 100 g, cooked breast)</p>
+              <div class="nutri">
+                <div class="n n1"><span>🔥</span><strong>165</strong>Calories</div>
+                <div class="n n2"><span>💪</span><strong>31 g</strong>Protein</div>
+                <div class="n n3"><span>🌾</span><strong>0 g</strong>Carbohydrates</div>
+                <div class="n n4"><span>💧</span><strong>3.6 g</strong>Fat</div>
+                <div class="n n5"><span>🌿</span><strong>0 g</strong>Fibre</div>
+                <div class="n n6"><span>⭐</span><strong>0.6 mg</strong>Vitamin B6</div>
+              </div>
+            </section>
+            <section class="box storage"><h3>🧊 Storage Tips</h3>
+              <ul><li>Keep raw chicken in the fridge at or below 4°C.</li><li>Use raw chicken within 1–2 days, or freeze it.</li><li>Cooked chicken keeps 3–4 days in the fridge.</li></ul>
+            </section>
+          </div>
+          <div class="col">
+            <section class="box good"><h3>✅ Advantages</h3>
+              <ul><li>Excellent source of lean, complete protein.</li><li>Supports muscle growth and repair.</li><li>Provides niacin, selenium and B vitamins.</li><li>Low in fat when skinless.</li></ul>
+            </section>
+            <section class="box warn"><h3>⚠️ Things to consider</h3>
+              <ul><li>Must be cooked fully (75°C inside) to avoid food poisoning.</li><li>Wash hands and boards after handling raw chicken.</li><li>Fried or skin-on chicken is higher in fat.</li></ul>
+            </section>
+          </div>
+        </div>
+        <section class="box recipes"><h3>🍴 Recipes Using This Ingredient</h3><p class="note">Here are some delicious recipes that include chicken:</p>
+          <div class="recipe-grid">
+            <figure class="recipe"><img src="../assets/images/chicken-curry.jpg" alt="Chicken Curry" loading="lazy"><figcaption><b>Chicken Curry</b><span>🕒 45 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/Grilled-Chicken-Salad.jpg" alt="Grilled Chicken Salad" loading="lazy"><figcaption><b>Grilled Chicken Salad</b><span>🕒 25 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/jerk-chicken-burgers.jpg" alt="Jerk Chicken Burgers" loading="lazy"><figcaption><b>Jerk Chicken Burgers</b><span>🕒 30 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/Chicken-Stir-fry.jpg" alt="Chicken Stir-fry" loading="lazy"><figcaption><b>Chicken Stir-fry</b><span>🕒 20 mins</span></figcaption></figure>
+          </div>
+        </section>
+      </template>
+    </article>
+
+    <!-- 10. OATS -->
+    <article class="card" tabindex="0">
+      <img src="../assets/images/oats.jpg" alt="Oats" loading="lazy">
+      <h2>Oats</h2>
+      <p>Whole grain</p>
+      <template>
+        <div class="popup-top">
+          <img src="../assets/images/oats.jpg" alt="Oats">
+          <div>
+            <h2>Oats</h2>
+            <p>A wholesome grain with a soft, nutty taste. Oats make warm porridge, chilled overnight jars, baked treats and savoury dishes.</p>
+            <ul class="tags"><li class="pink">Whole Grain</li><li class="green">Beta-glucan</li><li class="blue">Heart Friendly</li><li class="purple">High in Fibre</li></ul>
+          </div>
+        </div>
+        <div class="popup-grid">
+          <div class="col">
+            <section class="box nutrition"><h3>🌿 Nutritional Information</h3><p class="note">(Approximate values per 100 g, dry)</p>
+              <div class="nutri">
+                <div class="n n1"><span>🔥</span><strong>389</strong>Calories</div>
+                <div class="n n2"><span>💪</span><strong>16.9 g</strong>Protein</div>
+                <div class="n n3"><span>🌾</span><strong>66 g</strong>Carbohydrates</div>
+                <div class="n n4"><span>💧</span><strong>6.9 g</strong>Fat</div>
+                <div class="n n5"><span>🌿</span><strong>10.6 g</strong>Fibre</div>
+                <div class="n n6"><span>⭐</span><strong>4.7 mg</strong>Iron</div>
+              </div>
+            </section>
+            <section class="box storage"><h3>🧊 Storage Tips</h3>
+              <ul><li>Store in an airtight container in a cool, dry place.</li><li>Keep away from moisture and strong smells.</li><li>Best used within 12 months of opening.</li></ul>
+            </section>
+          </div>
+          <div class="col">
+            <section class="box good"><h3>✅ Advantages</h3>
+              <ul><li>Beta-glucan fibre helps lower cholesterol.</li><li>Slow-release energy keeps you full.</li><li>Good source of iron, magnesium and zinc.</li><li>Easy to prepare in many ways.</li></ul>
+            </section>
+            <section class="box warn"><h3>⚠️ Things to consider</h3>
+              <ul><li>Often cross-contaminated with gluten; choose certified gluten-free if needed.</li><li>Flavoured instant oats can contain a lot of sugar.</li><li>Increase fibre slowly to avoid bloating.</li></ul>
+            </section>
+          </div>
+        </div>
+        <section class="box recipes"><h3>🍴 Recipes Using This Ingredient</h3><p class="note">Here are some delicious recipes that include oats:</p>
+          <div class="recipe-grid">
+            <figure class="recipe"><img src="../assets/images/Porridge-with-Berries.jpg" alt="Porridge with Berries" loading="lazy"><figcaption><b>Porridge with Berries</b><span>🕒 10 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/overnight-oats.jpg" alt="Overnight Oats" loading="lazy"><figcaption><b>Overnight Oats</b><span>🕒 5 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/Oat-Flapjacks.jpg" alt="Oat Flapjacks" loading="lazy"><figcaption><b>Oat Flapjacks</b><span>🕒 30 mins</span></figcaption></figure>
+            <figure class="recipe"><img src="../assets/images/Banana-Oat-Pancakes.jpg" alt="Banana Oat Pancakes" loading="lazy"><figcaption><b>Banana Oat Pancakes</b><span>🕒 20 mins</span></figcaption></figure>
+          </div>
+        </section>
+      </template>
+    </article>
+
+  </main>
+    <section><footer class="footer">
+    <div class="wrap">
+      <div class="explore">
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="#Explore">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Favorites</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Recipe Types</h2>
+          <ul>
+            <li><a href="#">Breakfast</a></li>
+            <li><a href="#">Lunch</a></li>
+            <li><a href="#">Dinner</a></li>
+            <li><a href="#">Snack</a></li>
+            <li><a href="#">Dessert</a></li>
+            <li><a href="#">Drink</a></li>
+            <li><a href="#">fastfood</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Follow us</h2>
+          <ul class="social">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="last">
+        <a class="logo" href="#">Recipe<span> Finder</span></a>
+        <p>Discover delicious recipes, explore new flavors, find your perfect dish, and turn Everyday Ingredients into something special.</p>
+        <p>&copy;2026 Recipe Finder</p>
+        <p>Made with <i class="fa-solid fa-heart"></i> for food lovers</p>
+      </div>
+    </div>
+  </footer></section>
+  <!-- Popup: JavaScript fills #popup-body with the clicked card's details -->
+  <dialog id="popup" aria-label="Ingredient details">
+    <button id="close-btn" aria-label="Close details">✕</button>
+    <div id="popup-body"></div>
+  </dialog>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+
+
+
+
+
+
+
+
