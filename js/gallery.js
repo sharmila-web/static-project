@@ -1,31 +1,31 @@
-// Get the elements we need from the page
 const popup = document.getElementById("popup");
 const popupBody = document.getElementById("popup-body");
 const closeBtn = document.getElementById("close-btn");
 const cards = document.querySelectorAll(".card");
 
-// Copy the clicked card's hidden details into the popup and show it
+// popup and show it
 function openPopup(card) {
-  const details = card.querySelector("template").content.cloneNode(true);
-  popupBody.replaceChildren(details);
-  popup.showModal();
+  const details = card.querySelector("template").content.cloneNode(true);//template la erukura content ya access pannudhu, cloneNode ---node ya copy seira oru method//trude nu kudutha deep copy false kudutha element mattum copy agum not child elements.
+  popupBody.replaceChildren(details);//remove old children add nee children
+  popup.showModal();//html element dialog method. used to open popup
   popup.scrollTop = 0;
 }
 
-// Every card opens its own details (mouse click or Enter key)
+
+// pop up open
 cards.forEach(function (card) {
   card.addEventListener("click", function () {
     openPopup(card);
   });
-  card.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") openPopup(card);
-  });
 });
 
-// Close with the X button or by clicking the dark area outside
+
+// Close btn
 closeBtn.addEventListener("click", function () {
-  popup.close();
+  popup.close();//popup close
 });
 popup.addEventListener("click", function (event) {
   if (event.target === popup) popup.close();
 });
+
+

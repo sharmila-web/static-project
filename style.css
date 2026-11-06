@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,6 +15,7 @@ body {
   color: #1f2933;
   background: whitesmoke;
   line-height: 1.5;
+  
 }
 
 .next a {
@@ -33,8 +35,8 @@ body {
 
 .site-header nav {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 50px;
+  
 }
 
 .site-header nav a {
@@ -96,6 +98,9 @@ nav a {
   font-size: 16px;
   font-weight: 500;
 }
+.next{
+  margin-left: 15px;
+}
 
 /*Recipes*/
 
@@ -126,7 +131,7 @@ nav a {
   border: 1px solid #641d1d;
   border-radius: 8px;
   overflow: hidden;
-  display: flex;
+  display:flex;
   flex-direction: column;
 }
 
@@ -228,7 +233,7 @@ nav a {
 }
 
 .explore ul {
-  list-style: none;
+  list-style:none;
   margin: 0;
   padding: 0;
 }
@@ -250,6 +255,9 @@ nav a {
   color: #b5bfc9;
   max-width: 1200px;
   margin: 40px auto 0 auto;
+}
+.logo{
+  margin-left: 0px;
 }
 .explore {
   max-width: 1200px;
