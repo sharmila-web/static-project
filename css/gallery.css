@@ -23,7 +23,7 @@ body {
 .site-header nav {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
 }
 
 .site-header nav a {
@@ -92,7 +92,7 @@ nav a {
   padding: 56px 24px 32px;
 }
 .page-header h1 {
-  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-size: 2.8rem;
   color: var(--green-dark);
 }
 .page-header p {
@@ -117,16 +117,11 @@ nav a {
   padding: 14px 14px 20px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.50);/*offset*/
   transition:'transform 0.3s ease;
     
 }
-.card:hover,
-.card:focus-visible {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(15, 92, 68, 0.22);
-  outline: none;
-}
+
 .card img {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -149,7 +144,7 @@ nav a {
 
 /* ---------- Popup---------- */
 #popup {
-  width: min(1040px, 94vw);
+  width: min(1040px);
   max-height: 92vh;
   margin: auto;
   border: none;
@@ -157,12 +152,6 @@ nav a {
   background: #fffdf8;
   overflow-y: auto;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
-}
-#popup[open] {
-  animation: pop 0.3s ease;
-}
-#popup::backdrop {
-  background: rgba(20, 50, 40, 0.65);
 }
 
 #close-btn {
@@ -178,7 +167,7 @@ nav a {
   color: var(--green-dark);
   font-size: 1.1rem;
   cursor: pointer;
-  z-index: 2;
+  /* z-index: 2; */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition:
     background 0.2s ease,
@@ -193,7 +182,7 @@ nav a {
   padding: 28px 30px 30px;
 }
 
-/* Top part: big image + description*/
+/* description*/
 .popup-top {
   display: flex;
   gap: 28px;
@@ -383,9 +372,7 @@ nav a {
   object-fit: cover;
   transition: transform 0.4s ease;
 }
-.recipe:hover img {
-  transform: scale(1.07);
-}
+
 .recipe figcaption {
   position: absolute;
   inset: auto 0 0 0;
@@ -394,7 +381,7 @@ nav a {
   gap: 2px;
   padding: 36px 14px 12px;
   color: #fff;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  background:  rgba(0, 0, 0,0.1);
 }
 .recipe figcaption b {
   font-size: 1.05rem;
@@ -470,12 +457,7 @@ nav a {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-    animation: none !important;
-  }
-}
+
 
 /* Footer */
 

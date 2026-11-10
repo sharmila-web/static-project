@@ -220,7 +220,7 @@ nav a {
   flex: 1 1 240px;
   align-self: flex-start;
   background: #f7f7f7;
-  border: 1px solid #e3e3e3;
+  border: 1px solid white;
   border-radius: 10px;
   padding: 18px;
 }
@@ -292,7 +292,10 @@ nav a {
   font-size: 11px;
   font-weight: bold;
 }
-
+.nutri-box{
+   background: #c6e2f3;
+  border-color: #597da9;
+}
 .nutri-pct {
   font-weight: bold;
   font-size: 12px;

@@ -17,7 +17,7 @@ cards.forEach(function (card) {
   card.addEventListener("click", function () {
     openPopup(card);
   });
-});
+});//page la erukura yellataium one by one check pandradhukagaloop use pannierukom
 
 
 // Close btn
