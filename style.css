@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +14,6 @@ body {
   color: #1f2933;
   background: whitesmoke;
   line-height: 1.5;
-  
 }
 
 .next a {
@@ -36,7 +34,6 @@ body {
 .site-header nav {
   display: flex;
   gap: 50px;
-  
 }
 
 .site-header nav a {
@@ -64,8 +61,8 @@ body {
   gap: 8px;
   padding-top: 14px;
   padding-bottom: 14px;
-  max-width: 96%; 
-  margin: 0 auto; 
+  max-width: 96%;
+  margin: 0 auto;
 }
 .wrap-bar .logo {
   font-size: 2.5rem;
@@ -80,25 +77,24 @@ a {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color:#9b0c23;
+  color: #9b0c23;
   text-decoration: none;
   cursor: pointer;
   margin-left: -20px;
 }
 
-
 nav {
   display: flex;
-  gap: 30px; 
+  gap: 30px;
 }
 
 nav a {
   color: #ffffff;
-  text-decoration:none;
+  text-decoration: none;
   font-size: 16px;
   font-weight: 500;
 }
-.next{
+.next {
   margin-left: 15px;
 }
 
@@ -123,7 +119,7 @@ nav a {
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 24px; 
+  gap: 24px;
 }
 
 .recipe-card {
@@ -131,14 +127,14 @@ nav a {
   border: 1px solid #641d1d;
   border-radius: 8px;
   overflow: hidden;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
 .recipe-image-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 75%; 
+  padding-top: 75%;
   background-color: #641d1d;
 }
 
@@ -212,7 +208,7 @@ nav a {
 .footer {
   background: #1f2933;
   color: #e4e9ee;
-  padding: 48px 0 32px;
+  padding: 20px 0 20px;
   font-size: 0.9375rem;
 }
 
@@ -233,7 +229,7 @@ nav a {
 }
 
 .explore ul {
-  list-style:none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -248,7 +244,7 @@ nav a {
 }
 
 .last {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   padding-top: 24px;
   border-top: 1px solid #435260;
   font-size: 0.8125rem;
@@ -256,8 +252,9 @@ nav a {
   max-width: 1200px;
   margin: 40px auto 0 auto;
 }
-.logo{
+.logo {
   margin-left: 0px;
+  padding-right: 780px;
 }
 .explore {
   max-width: 1200px;
@@ -265,7 +262,7 @@ nav a {
 }
 
 .footer {
-  padding-left: 1% ;
-  padding-right: 1% ;
+  padding-left: 1%;
+  padding-right: 1%;
   box-sizing: border-box;
 }

@@ -5,9 +5,9 @@ const cards = document.querySelectorAll(".card");
 
 // popup and show it
 function openPopup(card) {
-  const details = card.querySelector("template").content.cloneNode(true);//template la erukura content ya access pannudhu, cloneNode ---node ya copy seira oru method//trude nu kudutha deep copy false kudutha element mattum copy agum not child elements.
-  popupBody.replaceChildren(details);//remove old children add nee children
-  popup.showModal();//html element dialog method. used to open popup
+  const details = card.querySelector("template").content.cloneNode(true);
+  popupBody.replaceChildren(details);
+  popup.showModal();
   popup.scrollTop = 0;
 }
 
@@ -17,7 +17,7 @@ cards.forEach(function (card) {
   card.addEventListener("click", function () {
     openPopup(card);
   });
-});//page la erukura yellataium one by one check pandradhukagaloop use pannierukom
+});
 
 
 // Close btn

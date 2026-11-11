@@ -10,7 +10,6 @@ body {
   line-height: 1.5;
 }
 
-
 /* ---------- secondnext/home>recipes ---------- */
 .secondnext {
   padding: 16px 20px;
@@ -61,8 +60,8 @@ body {
   gap: 8px;
   padding-top: 14px;
   padding-bottom: 14px;
-  max-width: 96%; 
-  margin: 0 auto; 
+  max-width: 96%;
+  margin: 0 auto;
 }
 .wrap-bar .logo {
   font-size: 2.5rem;
@@ -73,20 +72,21 @@ body {
 a {
   color: #333333;
 }
-
+.method #tips {
+  font-size: 30px;
+}
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color:#9b0c23;
+  color: #9b0c23;
   text-decoration: none;
   cursor: pointer;
   margin-left: -20px;
 }
 
-
 nav {
   display: flex;
-  gap: 30px; 
+  gap: 30px;
 }
 
 nav a {
@@ -95,7 +95,6 @@ nav a {
   font-size: 16px;
   font-weight: 500;
 }
-
 
 /* container */
 
@@ -111,7 +110,6 @@ nav a {
   border: #641d1d;
   border-radius: 12px;
   box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3);
-
 }
 
 .recipe-content,
@@ -120,7 +118,7 @@ nav a {
 }
 
 .recipe-tag {
-  color:#9b0c23;
+  color: #9b0c23;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -133,7 +131,6 @@ nav a {
   font-weight: 800;
   color: black;
   margin: 0 0 16px 0;
- 
 }
 
 .recipe-text {
@@ -246,7 +243,6 @@ nav a {
   cursor: pointer;
 }
 
-
 /* ---------- Nutrition ---------- */
 .nutrition {
   margin: 10px 20px 40px;
@@ -292,8 +288,8 @@ nav a {
   font-size: 11px;
   font-weight: bold;
 }
-.nutri-box{
-   background: #c6e2f3;
+.nutri-box {
+  background: #c6e2f3;
   border-color: #597da9;
 }
 .nutri-pct {
@@ -378,7 +374,7 @@ nav a {
   max-width: 1200px;
   margin: 40px auto 0 auto;
 }
-.logo{
+.logo {
   margin-left: 0px;
 }
 
@@ -388,7 +384,7 @@ nav a {
 }
 footer,
 .footer {
-  padding-left: 1% ;
-  padding-right: 1% ;
+  padding-left: 1%;
+  padding-right: 1%;
   box-sizing: border-box;
 }
